@@ -24,7 +24,7 @@ class Conta
   {
     return $this->saldo;
   }
-  private function calculoDeposito($valor)
+  protected function calculoDeposito($valor)
   {
     return $valor += 10;
   }

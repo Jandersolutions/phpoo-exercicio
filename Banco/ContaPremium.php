@@ -8,6 +8,7 @@ class ContaPremium extends Conta
   }
   protected function calculoDeposito($valor)
   {
-    return $valor += 20;
+    $valorNormal = parent::calculoDeposito();
+    return $valorNormal += 20;
   }
 }
